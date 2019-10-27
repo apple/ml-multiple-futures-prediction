@@ -10,10 +10,10 @@ Multiple Futures Prediction is a framework for multimodal temporal trajectory pr
 
 ## Citation
 ```
-@article{tang2019mfp,
+@inproceedings{tang2019mfp,
   title={Multiple Futures Prediction},
   author={Tang, Yichuan Charlie and Salakhutdinov, Ruslan},
-  booktitle={Advances in neural information processing systems},
+  booktitle={Advances in {N}eural {I}nformation {P}rocessing {S}ystems (NeurIPS)},
   year={2019}
 }
 ```
