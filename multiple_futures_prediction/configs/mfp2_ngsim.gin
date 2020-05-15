@@ -1,0 +1,35 @@
+Params.log            = 0                   # log results and save model checkpoint
+Params.modes          = 2                   # MFP modes
+
+Params.subsampling        = 2               # subsampling factor
+Params.hist_len_orig_hz   = 30              # history steps at original sampling rate (e.g. 10 hz)
+Params.fut_len_orig_hz    = 50              # future steps at original sampling rate (e.g. 10 hz)
+
+Params.encoder_size             = 64        # sizes of various neural layers
+Params.decoder_size             = 128
+Params.dyn_embedding_size       = 32
+Params.input_embedding_size     = 32
+Params.dec_nbr_enc_size         = 8
+Params.nbr_atten_embedding_size = 80
+
+Params.seed           = 1234
+Params.use_cuda       = True
+
+Params.remove_y_mean          = True        # remove the mean of the future trajectory
+Params.use_gru                = True        # GRU or LSTM
+Params.bi_direc               = True        # bidrectional RNN
+Params.self_norm              = True        # Normalize prediction targets
+Params.data_aug               = False       # Add noise to data?
+Params.use_context            = False       # use contexture bird's eye view map?
+Params.nll                    = True        # Use negative Log-liklihood loss
+Params.use_forcing            = 0           # 0: no forcing. 1: teacher-forcing. 2: classmates-forcing.
+
+Params.iter_per_err           = 100
+Params.iter_per_eval          = 1000
+Params.iters_per_save         = 5000
+Params.pre_train_num_updates  = 200000
+Params.updates_div_by_10      = 100000
+Params.nbr_search_depth       = 10          # depth of searching for finding 'neighbors' (only for NGSIM dataset)
+  
+Params.lr_init   = 0.001                    # initial learning rate
+Params.min_lr    = 0.00005                  # minimum learning rate

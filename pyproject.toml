@@ -1,0 +1,35 @@
+#
+# Copyright (C) 2020 Apple Inc. All rights reserved.
+#
+
+# Tell pip to use flit to build this pacakge
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "multiple_futures_prediction"
+author = "Charlie Tang"
+author-email = "yichuan_tang@apple.com"
+
+license = "Apple Software"
+requires-python = ">=3.6"
+description-file="README.md"
+
+# List here all your dependencies
+requires = [
+  "attrdict",
+  "gin_config",
+  "torch",
+  "scipy",
+  "numpy",
+  "opencv-python"
+]
+
+[tool.flit.metadata.requires-extra]
+# Packages required for testing
+test = ["mypy"]
+
+[tool.flit.scripts]
+# Register your scripts here (feel free to rename the sample script)
+train_ngsim = "multiple_futures_prediction.cmd.train_ngsim_cmd:main"
