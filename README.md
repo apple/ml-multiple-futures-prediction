@@ -6,7 +6,7 @@ Neural Information Processing Systems, 2019. (NeurIPS 2019)
 
 
 Please cite our paper if you find our work useful for your research:
-```
+```bibtex
 @article{tang2019mfp,
   title={Multiple Futures Prediction},
   author={Tang, Yichuan Charlie and Salakhutdinov, Ruslan},
